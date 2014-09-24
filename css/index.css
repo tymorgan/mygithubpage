@@ -1,0 +1,127 @@
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+
+
+body {
+	font: 16px "Open Sans",Helvetica Neue,sans-serif;
+	position: relative;
+}
+
+
+.navLinkStyle {
+	font-size: 13px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 200;
+	font-style: normal;
+	color: #ffffff;
+	top: 17px;	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid transparent; /*To compensate for the added border on hover*/
+}
+
+.navLinkStyle:hover {
+	background: none !important;
+	color: #ffffff;
+}
+
+.active .navLinkStyle{
+	background: none !important;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	top: 17px;	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 8px !important;
+}
+
+.appearCollapse {
+	color: #FFFFFF;
+	font-size: 25px;
+}
+
+.navbar-margin-right {
+	padding-right: 10px;
+}
+
+#homeHeader {
+	padding-top: 200px;
+	padding-bottom: 200px;
+	height: 100vh;
+	min-height: 800px;
+}
+
+
+.tylerHeading {
+	 font-family: 'Alegreya', serif;
+    font-weight: 700;
+    line-height: 46px;
+    font-size: 70px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 767px) {
+  .tylerHeading {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 469px) {
+	.tylerHeading{
+		line-height: 70px;
+	}
+	#homeHeader {
+  	min-height: 1000px;
+  }}
+
+
+.tylerP {
+	font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+	padding-top: 40px;
+	line-height: 40px;
+	color: white;
+}
+
+#aboutSection {
+	background-color: #FF6900;
+	height: 100vh;
+}
+
+#workSection {
+	background-color: #8E3A00;
+	height: 100vh;
+}
+
+#contactSection {
+	background-color: #00EBFF;
+	height: 100vh;
+}
+
+video#bgvid {
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -100;
+	background: url(ocean.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+video { display: block; }
+
+
+@media screen and (max-device-width: 800px) {
+html { background: url(ocean.jpg) #000 no-repeat center center fixed; }
+#bgvid { display: none; }
+}
