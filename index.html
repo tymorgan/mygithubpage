@@ -10,6 +10,7 @@
         
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/index.css">
+         <link rel="stylesheet" href="css/transitions.css">
         <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css">
         <link rel="shortcut icon"  href="assets/logo_white.png">
@@ -63,13 +64,96 @@
 <!-- Home End -->
 <!-- About Begin -->
 	<div class="container-fluid" id="aboutSection">
-		<h2>About</h2>
+			<div class="col-md-6">
+				<div class="aboutDiv col-md-10 col-md-offset-2">
+					<h2 class="aboutHeading">About Me</h2>
+					<p class="aboutP">I hail from Las Vegas but now live in Provo, UT. I have a beautiful wife and an awesome son!</p>	
+				</div>
+				<div class="col-md-12">
+					<div class="col-md-5 col-md-offset-1 text-center">
+						<div class="skillsPosition">
+							<span class="skills">Digital Marketing</span>
+						</div>
+						<div class="skillsPosition">
+							<span class="skills">Business Analytics</span>
+						</div>
+					</div>
+					<div class="col-md-5  text-center">
+						<div class="skillsPosition">
+							<span class="skills">Front-End Web Dev</span>
+						</div>
+						<div class="skillsPosition">
+							<span class="skills">UX/UI Design</span>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-md-5">
+				<!--  Carousel - consult the Twitter Bootstrap docs at 
+      http://twitter.github.com/bootstrap/javascript.html#carousel -->
+				<div id="this-carousel-id" class="cBorder carousel slide"><!-- class of slide for animation -->
+				  <div class="carousel-inner">
+				    <div class="item active"><!-- class of active since it's the first item -->
+				      <img src="assets/tylerGC.jpg" alt="" />
+				      <span class="text-content"><span>Utah Transplant</span></span>
+				    </div>
+				    <div class="item">
+				      <img src="assets/myfamily.jpg" alt="" />	
+				      <span class="text-content"><span>Happily Married</span></span>		   
+				    </div>
+				    <div class="item">
+				      <img src="assets/captainM.jpg" alt="" />
+				      <span class="text-content"><span>Super Dad</span></span>
+				    </div>
+				  </div><!-- /.carousel-inner -->
+				  <!--  Next and Previous controls below
+				        href values must reference the id for this carousel -->
+				    <a class="positionC carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+				    <a class="positionC carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+				</div><!-- /.carousel -->
 
+			</div>
 	</div>
 <!-- About End -->
 <!-- Work Begin -->
 	<div class="container-fluid" id="workSection">
-		<h2>Work</h2>
+		<div class="row">
+			<div class="sectionPos">
+				<div class="site-example1 site-font col-md-6">
+					<h3>World Tech Academy</h3>
+					<img class="col-md-8 col-md-offset-2 text-center siteImg" src="assets/portfolioWTA.png" alt="" />
+				      <span class="big-site-text-content text-center"><span>World Tech Academy<a target="_blank" href="http://worldtechacademy.com/"><div class="site-link-position col-md-4 col-md-offset-4">
+							<span class="site-link">View Site</span>
+						</div></a></span></span>
+				</div>
+				<div class="site-example2 site-font col-md-6">
+					<h3>Coming Soon</h3>
+					<img class="col-md-8 col-md-offset-2 text-center siteImg" src="assets/comingSoon.png" alt="" />
+				      <span class="big-site-text-content"><span>Sorry, Not yet</span></span>
+				</div>
+			</div>
+
+
+			<div>
+				<div class="site-example3 site-font col-md-4">
+					<h3>Coming Soon</h3>
+					<img class="col-md-8 col-md-offset-2 text-center siteImg" src="assets/comingSoon.png" alt="" />
+				      <span class="little-site-text-content"><span>Take a chill pill</span></span>
+				</div>
+				<div class="site-example4 site-font col-md-4">
+					<h3>Coming Soon</h3>
+					<img class="col-md-8 col-md-offset-2 text-center siteImg" src="assets/comingSoon.png" alt="" />
+				      <span class="little-site-text-content"><span>I still have to</span></span>
+				</div>
+				<div class="site-example5 site-font col-md-4">
+					<h3>Coming Soon</h3>
+					<img class="col-md-8 col-md-offset-2 text-center siteImg" src="assets/comingSoon.png" alt="" />
+				      <span class="little-site-text-content"><span>make some sites!</span></span>
+				</div>
+			</div>
+		</div>
 
 	</div>
 <!-- Work End -->
