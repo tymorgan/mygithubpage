@@ -5,12 +5,17 @@
 @viewport           { width: device-width; }
 
 html {
+  margin: 0;
+  width: 100%;
+   overflow-x:hidden;
 
 }
 
 body {
 	font: 16px "Open Sans",Helvetica Neue,sans-serif;
 	position: relative;
+  width: 100%;
+    overflow-x:hidden;
 
 }
 
@@ -112,7 +117,7 @@ video#bgvid {
 	background-size: cover;
 }
 
-video { display: block; }
+video { display: block;}
 
 
 @media screen and (max-device-width: 800px) {
@@ -125,6 +130,9 @@ body { background: url(ocean.jpg) #000 no-repeat center center fixed; }
 	
 }
 
+.heightS {
+  max-height: 500px;
+}
 
 .cBorder {
 	margin-top: 100px;
@@ -136,7 +144,7 @@ span.text-content {
   color: white;
   cursor: pointer;
   display: table;
-  height: 100vh;
+  height: 110vh;
   left: 0;
   position: absolute;
   top: -100px;
@@ -205,25 +213,74 @@ span.text-content span {
 	
 }
 
+@media screen and (max-width: 1050px) {
+    .skills {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .skills {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 433px) {
+    .skills {
+        font-size: 12px;
+    }
+}
 .skillsPosition {
 	margin-top: 50px;
 	border: 2px solid #28FFDF;
 	color: white;
 	height: 50px;
 	padding-top:12px;
+}
 
+@media screen and (max-width: 767px) {
+    .skillsPosition {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
 }
 .skillsPosition:hover {
 	color: black;
 	background-color: white;
 	border-color: white;
 }
-
+/*.carDisplay {
+  margin: 300px;
+}*/
+@media screen and (max-width: 991px) {
+    #aboutSection {
+        width: 100%;
+        height: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+@media screen and (max-width: 767px) {
+    #aboutSection {
+        width: 100%;
+        height: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
 
 #workSection {
-	background-color: #000000;
+	background-color: #383838;
 	height: 100vh;
 	min-height: 800px;
+}
+
+@media (max-width: 767px) {
+  #workSection {
+    min-height: 2250px;
+  }
 }
 .sectionPos {
 	margin-top: 100px;
@@ -260,15 +317,18 @@ span.text-content span {
 	background-color: #383838;
 	height: 300px;
 }
-
-
-#contactSection {
-	background-color: #FFE273;
-	height: 100vh;
-	min-height: 800px;
+@media (max-width: 767px) {
+  .site-example1, .site-example2 {
+   height: 420px;
+   margin-bottom: -20px;
+  }
 }
-
-
+@media (max-width: 767px) {
+  .site-example3, .site-example4, .site-example5 {
+    height: 440px;
+    margin-bottom: -20px;
+  }
+}
 
 span.big-site-text-content {
   background: #DDDDDD;
@@ -279,7 +339,7 @@ span.big-site-text-content {
   left: 0;
   position: absolute;
   top: 0;
-  width: 110%;
+  width: 100%;
   opacity: 0;
   font-size: 50px;
   -webkit-transition: opacity 500ms;
@@ -303,7 +363,7 @@ span.little-site-text-content {
   left: 0;
   position: absolute;
   top: 0;
-  width: 110%;
+  width: 100%;
   opacity: 0;
   font-size: 50px;
   -webkit-transition: opacity 500ms;
@@ -333,6 +393,43 @@ span.little-site-text-content span {
 .site-example5:hover span.little-site-text-content {
   opacity: 1;
 }
+
+@media (max-width: 1248px) {
+  span.little-site-text-content {
+    font-size: 35px;
+
+  }
+}
+
+@media (max-width: 1083px) {
+  span.big-site-text-content {
+    font-size: 35px;
+
+  }
+}
+@media (max-width: 786px) {
+  span.big-site-text-content {
+    font-size: 30px;
+
+  }
+}
+
+@media (max-width: 900px) {
+  span.little-site-text-content {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  span.big-site-text-content {
+   height: 420px;
+  }
+}
+@media (max-width: 767px) {
+  span.little-site-text-content {
+   height: 440px;
+  }
+}
 .site-link {
 	font-family: 'Roboto Condensed', sans-serif;
     font-weight: normal;
@@ -340,7 +437,9 @@ span.little-site-text-content span {
     line-height: 23px;
     text-transform: uppercase;
     letter-spacing: 2px;
-   padding-left: 55px;
+    
+   text-align: center;
+  vertical-align: middle;
 	
 }
 
@@ -352,6 +451,40 @@ span.little-site-text-content span {
 	padding-top:12px;
 }
 
+@media (max-width: 1167px) {
+  .site-link {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1077px) {
+  .site-link {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 801px) {
+  .site-link {
+    font-size: 7px;
+  }
+}
+@media (max-width: 767px) {
+  .site-link {
+    font-size: 12px;
+  }
+}
+@media (max-width: 451px) {
+  .site-link {
+    font-size: 8px;
+  }
+}
+
+#contactSection {
+  background-color: #FFE273;
+  height: 100vh;
+  min-height: 800px;
+}
+
+/*991*/
 .contactHeader {
 	font-family: 'Alegreya', serif;
     font-weight: 700;
@@ -374,3 +507,25 @@ span.little-site-text-content span {
     letter-spacing: 2px;
     color: #036F81;
 }
+
+.below-icon-p:hover {
+    color: white;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.footer-below {
+  font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  background-color: #036F81;
+  color: white;
+  height: 80px;
+  padding-top: 30px;
+}
+
