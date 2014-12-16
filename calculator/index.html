@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Awesome Calculator</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<h2 class="text-center">Awesome Calculator</h2>
+
+			<div class="col-md-4 col-md-offset-4 text-center calc-width">
+				<div class="styleInput col-md-12 input-group">
+				  <input type="text" id="displayValue" class="text-right form-control">
+				  
+				</div>
+					<button type="button" class="styleI btn btn-success" onclick="operator('+')">+</button>
+					<button type="button" class="styleI btn btn-success" onclick="operator('-')">-</button>
+					<button type="button" class="styleI btn btn-success" onclick="operator('/')">/</button>
+					<button type="button" class="styleI btn btn-success" onclick="operator('*')">x</button>
+					
+					<button type="button" class="styleI btn btn-success" onclick="equals()">=</button>
+					
+					<p>
+						<button type="button" class="styleB btn btn-default btn-lg" onclick="numPad(this)">0</button>
+						<button type="button" class="styleB btn btn-default btn-lg" onclick="numPad(this)">1</button>
+						<button type="button" class="styleB btn btn-default btn-lg" onclick="numPad(this)">2</button>
+						<button type="button" class="styleB btn btn-default btn-lg" onclick="numPad(this)">3</button>
+						<button type="button" class="styleB btn btn-default btn-lg" onclick="numPad(this)">4</button>
+						<button type="button" class="styleB btn btn-default btn-lg" onclick="numPad(this)">5</button>
+						<button type="button" class="styleB btn btn-default btn-lg" onclick="numPad(this)">6</button>
+						<button type="button" class="styleB btn btn-default btn-lg" onclick="numPad(this)">7</button>
+						<button type="button" class="styleB btn btn-default btn-lg" onclick="numPad(this)">8</button>
+						<button type="button" class="styleB btn btn-default btn-lg" onclick="numPad(this)">9</button>
+						<button type="button" class="styleB btn btn-default btn-lg" >x10</button>
+						<button type="button" class="styleB btn btn-default btn-lg">x100</button>
+						
+						
+					</p>
+					
+			</div>
+
+
+	</div>
+</div>
+	
+<script type="text/javascript" src="script.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+</body>
+</html>

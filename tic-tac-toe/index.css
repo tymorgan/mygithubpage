@@ -1,0 +1,54 @@
+html {
+	height: 100%;
+
+}
+
+body {
+	min-height: 100%;
+	color: #8C3E2B;
+}
+
+.colorB {
+	background-color: #5284BF;
+	padding-bottom: 60px;
+}
+
+.hC {
+	font-size: 60px;
+	color: white;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+.board {
+	max-width: 600px;
+	max-height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	
+}
+
+.box {
+	height: 200px;
+	width: 33%;
+	border: 2px solid #5284BF;
+	float: left;
+	font-size: 170px;
+	background-color: #F28D50;
+	color: #4B4A59;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.box span {
+	position: relative;
+	top: -25px;
+}
+
+.blue {
+	background-color: #4B4A59;
+	color: white
+	;
+}
+
+
+

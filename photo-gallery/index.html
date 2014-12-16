@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Photo Album</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+
+	
+	
+	
+</head>
+<body>
+	<!-- I don't think I can use bootstrap columns because I want to make it scroll horizontally, I need to change it up and to make my own columns depending on the number of pictures I want.  I need to fit my header within one of the columns and set the background of everything to the same color as the header -->
+
+
+	<div class="galleryBack">
+		<div class="navBarStyle" >
+				<ul class="nav nav-stacked leftNav">
+					<h1 class="logoName">The Photo Album</h1>
+			  		<li><a href="#">Home</a></li>
+			  		<li><a href="#">About</a></li>
+			  		<li><a href="#">Upload</a></li>
+				</ul>
+		</div>
+	<!-- The Modal -->
+	<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	        <div class="modal-body">
+	            <img id="modalPic" class="img-responsive">
+	        </div>
+	    </div>
+	  </div>
+	</div>
+
+		<div class="boxBox">
+			<!-- Top Third -->
+			
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-a-sea.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/1461084_10200400899423978_1470109034_n.jpg?oh=505368fd177f15bf28530f96b8ea3780&oe=54ED7728"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/14269_10201827292322909_8716292908500092857_n.jpg?oh=fada7472d7541464b2766c41dfdf9e86&oe=54B751D1&__gda__=1420596716_e0a4ec4f9a5f24d1e9f2ca85e306e66f"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-a-lax.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10628247_10201837755824490_6346325676529455129_n.jpg?oh=634d8e22270d80c883e128e0736b5d99&oe=54BC222B"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/269911_3400324745809_701816008_n.jpg?oh=853cae1264803cff616d683437ddf414&oe=54EB74BA&__gda__=1420764573_d8c7706f0f97114d6db6badd4bd8f0d7"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-b-lax.xx.fbcdn.net/hphotos-ash2/v/t1.0-9/1459972_614665091933365_2025818715_n.jpg?oh=47f3f7eeab150b4cab11a7f8bc1a73df&oe=54F053C9"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-a-lax.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10342396_10201466211976126_1431091890651606847_n.jpg?oh=bd52cc5edbeaa01d5d8c1b9fe446e5d2&oe=54BB87FD"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-b-lax.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10269402_10201138240497044_701897207115330734_n.jpg?oh=6bfd176c1cd9bd5f67c81448c120d9ad&oe=54B77509"></div>
+			
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1477568_10200372953285342_1031086309_n.jpg?oh=9fb92688c80df8d20dfa4d3f22711006&oe=54B8D2E8&__gda__=1420637250_28cb769e9bbe72c6c48837c95bbb753e"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-a-lax.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1381816_4995797471630_2066210520_n.jpg?oh=a534641f77cbd01a34ea3517080d8b2d&oe=54E864F7"></div>
+
+			<!-- Middle Third -->
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/968775_4270150410907_1023557810_n.jpg?oh=8001b56a2cf561d5e097369def520262&oe=54B044F1&__gda__=1425161302_0250708854e4f0983742768442934b84"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/18603_3823968256632_1939529503_n.jpg?oh=837a703f3a3bdf1c0187ea0144a3ed0a&oe=54A9E42F&__gda__=1424542578_276982c344cf9002370a27c9ca3f3113"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-b-lax.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/28005_3471104515259_315018877_n.jpg?oh=efc26ccf1f4a03c80248483024b8d5fb&oe=54AF3921"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-a-lax.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/523213_3223074834672_1445742820_n.jpg?oh=b141c044697fe3eaa3b6e39c37337052&oe=54F2E1B4"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/304511_3222888790021_1928931406_n.jpg?oh=4238c5d552fa65307cfe3796f6c4f8c7&oe=54BA2487&__gda__=1425446222_871155a21a79a88bfaa25da16f340f29"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-b-lax.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/156423_2705457374559_390387753_n.jpg?oh=a7a78c27506b381b28e185adbbf4be0b&oe=54BD9A44"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-prn2/v/t1.0-9/540515_2705456614540_2087870235_n.jpg?oh=3e417098f6ddd904c2e93dec0ed9ea32&oe=54E58041&__gda__=1421054606_ac1277db8c65e76e7c19912d0a933692"></div>
+			
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-b-lax.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/562668_2760883400175_1488082844_n.jpg?oh=695f2a393fcac42d502c633f4307560b&oe=54F543A9"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-b-lax.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/305625_2705457534563_1689202258_n.jpg?oh=5ed7d5f9d128797188002b9d52bcedc9&oe=54E63712"></div>
+
+			<!-- Bottom Third -->
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/301152_3222881589841_24928797_n.jpg?oh=e1633dace7747aaf838256c22d7c8e0a&oe=54B518F8&__gda__=1425211379_2ccafc62684308d05659c0325d4877bc"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/381260_3222878629767_345716812_n.jpg?oh=5fd248b4a05d88f8761dca5ad6956b45&oe=54F5FFCD&__gda__=1424943771_b6af3039c880f85e85f86f43c8c9fd99"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-a-lax.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10628247_10201837755824490_6346325676529455129_n.jpg?oh=634d8e22270d80c883e128e0736b5d99&oe=54BC222B"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/181886_2954554801839_539457011_n.jpg?oh=1fc3b8ec3ae2aa4ef9bb7c0a7245040c&oe=54B0B5C0&__gda__=1424663783_779ff847efd0ac3aa63c256402e26a64"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/182163_2954555201849_2104471683_n.jpg?oh=c82beffe770458873ef42ce3a49d1fc1&oe=54BC2EFD&__gda__=1421303194_7dc285a4d6be0e81ce3ec99a131c8a45"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn2/v/t1.0-9/534255_2854387617722_2023919569_n.jpg?oh=72afe6d5caeac18e4fed550a50058e0e&oe=54F3F07D&__gda__=1420886962_7b5afb6b4622a17291c42fe6b3bb212f"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-a-lax.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/545669_2774575462468_57587754_n.jpg?oh=faeea29b16946617414dda25a71aeff8&oe=54B7434A"></div>
+			
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-b-lax.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/524397_2774570702349_697050276_n.jpg?oh=aa24bb83e8a805a1ba555f64251b940e&oe=54F2207B"></div>
+
+			<div class="box" data-toggle="modal" data-target="#myModal"><img class="gallery" src="https://scontent-b-lax.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/541181_2705488495337_949585006_n.jpg?oh=25e9306f4d17e319381e57e2a1c14f3d&oe=54EBFFCF"></div>
+
+		</div>
+		
+	</div>	
+	
+
+
+
+
+	<!-- Load jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<!-- Custom Javascript -->
+	<script src="js/script.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	 
+
+</body>
+</html>

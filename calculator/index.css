@@ -1,0 +1,19 @@
+.calc-width {
+	height: 300px;
+	background-color: #5070FF;
+}
+
+.styleInput {
+	padding-top: 10px;
+}
+
+.styleI {
+	width: 43px;
+	margin-top: 10px;
+}
+
+.styleB {
+	width: 106px;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
